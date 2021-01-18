@@ -24,11 +24,9 @@ I dropped the columns in EIN and nAME as they're mostly used for labeling and do
 
 <h2> Compiling, Training, and Evaluating the Model </h2> 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why? <br>
-Upon implementing various factors, th best neural model that I came across was where I used 8 hidden layers while keeping my neurons low as, from previous modeling tests, I saw that the accuracy is higher when using more neuron/parameter samples. Secondly, I settled upon using the relu activation but using the sigmoid activation for my output layer.
+Upon implementing various factors, th best neural model that I came across was where I used 8 hidden layers while keeping my neurons low as, from previous modeling tests, I saw that the accuracy is higher when using more neuron/parameter samples. Secondly, I settled upon using the relu activation but using the sigmoid activation for my output layer. <br>
 
-<p align = "center">
 <img src = "https://github.com/JoseCalucag/Neural_Network_Charity_Analysis/blob/main/Resources/pic1.png">
- </p>
 
 * Were you able to achieve the target model performance? <br>
 Albeit this was my best model, I was only able to achieve 73.2%
