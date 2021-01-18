@@ -16,10 +16,13 @@ I have been tasked to create a binary classifier that is capable of predicting w
 <h2> Results </h2>
 Using bulleted lists and images to support your answers, address the following questions.
 
-<h3>Data Preprocessing</h3>
-There is a bulleted list that answers all six questions (15 pt)
-* What variable(s) are considered the target(s) for your model?
+<h3> Data Preprocessing </h3>
+* What variable is considered the target for your model?
+I considered using the IS_SUCCESSFUL column as my target. <br> 
+
 * What variable(s) are considered to be the features for your model?
+The features that we are using are every column except for two columms that we dropped in EIN and NAME as they're mostly labeling and don't have beneficial influence to the model. <br>
+
 * What variable(s) are neither targets nor features, and should be removed from the input data?
 
 <h3> Compiling, Training, and Evaluating the Model </h3> 
