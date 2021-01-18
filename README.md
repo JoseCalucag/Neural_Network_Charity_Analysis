@@ -14,7 +14,6 @@ I have been tasked to create a binary classifier that is capable of predicting w
 3) Optimize the model <br>
 
 <h2> Results </h2>
-Using bulleted lists and images to support your answers, address the following questions.
 
 <h3> Data Preprocessing </h3> <br>
 * What variable is considered the target for your model? <br>
