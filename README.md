@@ -13,6 +13,7 @@ I have been tasked to create a binary classifier that is capable of predicting w
 
 <h2> Results </h2>
 <h3> Data Preprocessing </h3>
+
 * What variable is considered the target for your model? <br>
 I considered using the IS_SUCCESSFUL column as my target. <br>
 
