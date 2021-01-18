@@ -1,6 +1,4 @@
-# Neural_Network_Charity_Analysis
-
-<h1 align = "center"> Cryptocurrencies </h1>
+<h1 align = "center"> Neural_Network_Charity_Analysis </h1>
 
 <p align = "center">
 <img src = "https://www.charitydata.ca/img/charitydata.png" width = "700" height = "150">
@@ -45,6 +43,4 @@ ATTEMPT #4: I increased the number of hidden layers while decreasing the neuron 
 ATTEMPT #5: I tried various types of activiations to see if there was any difference. Unfortunatly, outside of using RELU and SIGMOID, I would either see the same accuracy or worse. <br>
 
 <h2> Summary </h2>
-There is a summary of the results (2 pt)
-There is a recommendation on using a different model to solve the classification problem, and justification (3 pt)
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+To recap, we started with a large dataset where we preprocessed it by removing some irrelevant data then encoding the IS_SUCCESSFUL column to create a new dataset with the new encoded data. After, we standardized the data, created scaled training and testing sets then implimented various methods to try to acheive a 75% accuracy. Albeit I was only able to achieve an accuracy of 73.21%, I can only rethink and try to consider what other methods that I might have missed. Could I have tried a different Random Forest Classifier? Was there another activation I could have used? Was the dataset not big enough to achieve an successful accuracy? I believe that with the accuracy so close that there is definitely an x factor not considered where I could have achieved my accuracy goal.
