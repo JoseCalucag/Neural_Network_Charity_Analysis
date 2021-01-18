@@ -23,7 +23,7 @@ The features that we are using are every column except for two columns that we d
 * What variable(s) are neither targets nor features, and should be removed from the input data? <br>
 I dropped the columns in EIN and nAME as they're mostly used for labeling and don't have any beneifical influence to the model. <br>
 
-<h2> Compiling, Training, and Evaluating the Model </h2> 
+<h3> Compiling, Training, and Evaluating the Model </h3> 
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why? <br>
 Upon implementing various factors, th best neural model that I came across was where I used 8 hidden layers while keeping my neurons low as, from previous modeling tests, I saw that the accuracy is higher when using more neuron/parameter samples. Secondly, I settled upon using the relu activation but using the sigmoid activation for my output layer. <br>
