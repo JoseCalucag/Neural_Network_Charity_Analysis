@@ -17,8 +17,8 @@ I have been tasked to create a binary classifier that is capable of predicting w
 Using bulleted lists and images to support your answers, address the following questions.
 
 <h3> Data Preprocessing </h3>
-* What variable is considered the target for your model?
-I considered using the IS_SUCCESSFUL column as my target. <br> 
+* What variable is considered the target for your model? <br>
+I considered using the IS_SUCCESSFUL column as my target. <br>
 
 * What variable(s) are considered to be the features for your model?
 The features that we are using are every column except for two columms that we dropped in EIN and NAME as they're mostly labeling and don't have beneficial influence to the model. <br>
