@@ -8,15 +8,15 @@
  
 <h2> Overview of the Analysis </h2> 
 I have been tasked to create a binary classifier that is capable of predicting whether applicants can be successfull if funded by the charity Alphabet Soup. Coupled with a knowledge of machine learning and neural networks, I will analyize and use features in a dataset containing more that 34,000 organizations that have previously been funded by Alphabet Soup. With this dataset, I can build a model following these three steps:<br>
-
-1) Preprocessing the data to implement a neural network
-2) Compile, train then evaluate the modeled data
-3) Optimize the model
+<br>
+1) Preprocessing the data to implement a neural network <br>
+2) Compile, train then evaluate the modeled data <br>
+3) Optimize the model <br>
 
 <h2> Results </h2>
 Using bulleted lists and images to support your answers, address the following questions.
 
-<h3> Data Preprocessing </h3>
+<h3> Data Preprocessing </h3> <br>
 * What variable is considered the target for your model? <br>
 I considered using the IS_SUCCESSFUL column as my target. <br>
 
@@ -38,12 +38,12 @@ Upon implementing various factors, th best neural model that I came across was w
 Albeit this was my best model, I was only able to achieve 73.2%
 
 * What steps did you take to try and increase model performance? <br>
-I've tried various methods in seeing how it can impact on the accuracy of the model. 
-* ATTEMPT #1: Try removing all categorical labelling columns ['EIN', 'NAME', 'AFFILIATION', 'USE_CASE', 'ORGANIZATION']. However, it decreased my accuracy. So, I reverted back to my initial model of just removing the 'EIN' and 'NAME'
-* ATTEMPT #2: I increased my bin size to create large 'OTHER' grouping to have lesser columns in the dataset. As I say an increase, I considered the larger bin size moving forward.
-* ATTEMPT #3: I increased the neuron counts which would also raise the sampling parameters. In this case, I saw a decrease in the model from my second attempt. So, moving forward, I looked to decrease the neuron count to see if there was any impact.
-* ATTEMPT #4: I increased the number of hidden layers while decreasing the neuron count from Attempt #3. Seeing an increase using 8 hidden layers while decreasing the neuron count to see 1/2 of the amount of the total parameters, I considered using 8 hidden layers moving forward while still decreasing the neuron count.
-* ATTEMPT #5: I tried various types of activiations to see if there was any difference. Unfortunatly, outside of using RELU and SIGMOID, I would either see the same accuracy or worse.
+I've tried various methods in seeing how it can impact on the accuracy of the model. <br>
+ATTEMPT #1: Try removing all categorical labelling columns ['EIN', 'NAME', 'AFFILIATION', 'USE_CASE', 'ORGANIZATION']. However, it decreased my accuracy. So, I reverted back to my initial model of just removing the 'EIN' and 'NAME'. <br>
+ATTEMPT #2: I increased my bin size to create large 'OTHER' grouping to have lesser columns in the dataset. As I say an increase, I considered the larger bin size moving forward. <br>
+ATTEMPT #3: I increased the neuron counts which would also raise the sampling parameters. In this case, I saw a decrease in the model from my second attempt. So, moving forward, I looked to decrease the neuron count to see if there was any impact. <br>
+ATTEMPT #4: I increased the number of hidden layers while decreasing the neuron count from Attempt #3. Seeing an increase using 8 hidden layers while decreasing the neuron count to see 1/2 of the amount of the total parameters, I considered using 8 hidden layers moving forward while still decreasing the neuron count. <br>
+ATTEMPT #5: I tried various types of activiations to see if there was any difference. Unfortunatly, outside of using RELU and SIGMOID, I would either see the same accuracy or worse. <br>
 
 <h2> Summary </h2>
 There is a summary of the results (2 pt)
