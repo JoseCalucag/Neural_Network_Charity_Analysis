@@ -20,18 +20,32 @@ Using bulleted lists and images to support your answers, address the following q
 * What variable is considered the target for your model? <br>
 I considered using the IS_SUCCESSFUL column as my target. <br>
 
-* What variable(s) are considered to be the features for your model?
-The features that we are using are every column except for two columms that we dropped in EIN and NAME as they're mostly labeling and don't have beneficial influence to the model. <br>
+* What variable(s) are considered to be the features for your model? <br>
+The features that we are using are every column except for two columns that we dropped. <br>
 
-* What variable(s) are neither targets nor features, and should be removed from the input data?
+* What variable(s) are neither targets nor features, and should be removed from the input data? <br>
+I dropped the columns in EIN and nAME as they're mostly used for labeling and don't have any beneifical influence to the model. <br>
 
-<h3> Compiling, Training, and Evaluating the Model </h3> 
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
-* Were you able to achieve the target model performance?
-* What steps did you take to try and increase model performance?
+<h2> Compiling, Training, and Evaluating the Model </h2> 
+* How many neurons, layers, and activation functions did you select for your neural network model, and why? <br>
+Upon implementing various factors, th best neural model that I came across was where I used 8 hidden layers while keeping my neurons low as, from previous modeling tests, I saw that the accuracy is higher when using more neuron/parameter samples. Secondly, I settled upon using the relu activation but using the sigmoid activation for my output layer.
 
+<p align = "center">
+<img src = "https://www.charitydata.ca/img/pic1.png" width = "700" height = "150">
+ </p>
 
-Summary: 
+* Were you able to achieve the target model performance? <br>
+Albeit this was my best model, I was only able to achieve 73.2%
+
+* What steps did you take to try and increase model performance? <br>
+I've tried various methods in seeing how it can impact on the accuracy of the model. 
+* ATTEMPT #1: Try removing all categorical labelling columns ['EIN', 'NAME', 'AFFILIATION', 'USE_CASE', 'ORGANIZATION']. However, it decreased my accuracy. So, I reverted back to my initial model of just removing the 'EIN' and 'NAME'
+* ATTEMPT #2: I increased my bin size to create large 'OTHER' grouping to have lesser columns in the dataset. As I say an increase, I considered the larger bin size moving forward.
+* ATTEMPT #3: I increased the neuron counts which would also raise the sampling parameters. In this case, I saw a decrease in the model from my second attempt. So, moving forward, I looked to decrease the neuron count to see if there was any impact.
+* ATTEMPT #4: I increased the number of hidden layers while decreasing the neuron count from Attempt #3. Seeing an increase using 8 hidden layers while decreasing the neuron count to see 1/2 of the amount of the total parameters, I considered using 8 hidden layers moving forward while still decreasing the neuron count.
+* ATTEMPT #5: I tried various types of activiations to see if there was any difference. Unfortunatly, outside of using RELU and SIGMOID, I would either see the same accuracy or worse.
+
+<h2> Summary </h2>
 There is a summary of the results (2 pt)
 There is a recommendation on using a different model to solve the classification problem, and justification (3 pt)
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
